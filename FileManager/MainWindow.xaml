@@ -1,0 +1,118 @@
+﻿<Window x:Class="FileManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileManager"
+        mc:Ignorable="d"
+      Title="ByteLife" Height="600" Width="400">
+    <Grid>
+        <!-- Main layout with two sections: Character info and Game content -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Character Stats Panel -->
+        <Border Grid.Row="0" Background="#FF2196F3" Padding="10">
+            <StackPanel>
+                <TextBlock Text="{Binding Character.Name}" 
+                          Foreground="White" 
+                          FontSize="24" 
+                          FontWeight="Bold"/>
+                <TextBlock Text="{Binding Character.Age, StringFormat='Age: {0}'}" 
+                          Foreground="White"/>
+                <Grid Margin="0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Health -->
+                    <TextBlock Grid.Row="0" Grid.Column="0" 
+                              Text="Health:" Foreground="White" 
+                              Margin="0,0,10,5"/>
+                    <ProgressBar Grid.Row="0" Grid.Column="1" 
+                                Height="20" 
+                                Value="{Binding Character.Health}" 
+                                Maximum="100"/>
+
+                    <!-- Happiness -->
+                    <TextBlock Grid.Row="1" Grid.Column="0" 
+                              Text="Happiness:" Foreground="White" 
+                              Margin="0,0,10,5"/>
+                    <ProgressBar Grid.Row="1" Grid.Column="1" 
+                                Height="20" 
+                                Value="{Binding Character.Happiness}" 
+                                Maximum="100"/>
+
+                    <!-- Intelligence -->
+                    <TextBlock Grid.Row="2" Grid.Column="0" 
+                              Text="Intelligence:" Foreground="White" 
+                              Margin="0,0,10,5"/>
+                    <ProgressBar Grid.Row="2" Grid.Column="1" 
+                                Height="20" 
+                                Value="{Binding Character.Intelligence}" 
+                                Maximum="100"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <!-- Main Game Content -->
+        <TabControl Grid.Row="1">
+            <TabItem Header="Life">
+                <ScrollViewer>
+                    <StackPanel Margin="10">
+                        <!-- Life Events List -->
+                        <ListBox ItemsSource="{Binding LifeEvents}" 
+                                Background="Transparent" 
+                                BorderThickness="0" 
+                                MaxHeight="200">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border CornerRadius="5" 
+                                            Background="#FFF5F5F5" 
+                                            Padding="10" 
+                                            Margin="0,5">
+                                        <TextBlock Text="{Binding Message}" 
+                                                  TextWrapping="Wrap"/>
+                                    </Border>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+                        <!-- Actions -->
+                        <ItemsControl ItemsSource="{Binding AvailableActions}" 
+                                    Margin="0,20,0,0">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Command="{Binding Command}" 
+                                            Margin="0,5" 
+                                            Padding="10">
+                                        <TextBlock Text="{Binding Name}" 
+                                                  TextWrapping="Wrap"/>
+                                    </Button>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Career">
+                <TextBlock Text="Career options coming soon..." 
+                          Margin="10"/>
+            </TabItem>
+
+            <TabItem Header="Relationships">
+                <TextBlock Text="Relationships coming soon..." 
+                          Margin="10"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

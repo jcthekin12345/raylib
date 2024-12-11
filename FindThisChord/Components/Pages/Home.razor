@@ -1,0 +1,34 @@
+﻿@page "/"
+
+<div class="search-container">
+    <input @bind="searchText"
+    @bind:event="oninput"
+    placeholder="Enter search term" />
+    <button onclick="DoSearch">Search</button>
+    <label>@searchResult</label>
+</div>
+<script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
+<style>
+    .search-container {
+    padding: 20px;
+    }
+
+    input {
+    margin-right: 10px;
+    padding: 5px;
+    }
+</style>
+
+@code{
+    private static readonly HttpClient client = new HttpClient();
+    private string searchText = "";
+    private string searchResult = "";
+    private void DoSearch()
+    {
+        searchResult = $"Searching for: {searchText}"; 
+        try
+        {
+        }
+
+    }
+}

@@ -1,0 +1,7 @@
+# ninja log v6
+30	858	7548621801487637	CMakeFiles/dialogue.dir/main.cpp.obj.ddi	54a5442afc245b16
+944	5362	7548621810623828	CMakeFiles/dialogue.dir/main.cpp.obj	5f3f461a73221051
+863	942	7548621809822230	CMakeFiles/dialogue.dir/CXX.dd	15e4e97f089e5015
+863	942	7548621809822230	F:/ProgrammingEveryday/World/dialogue/cmake-build-debug/CMakeFiles/dialogue.dir/CXXModules.json	15e4e97f089e5015
+863	942	7548621809822230	CMakeFiles/dialogue.dir/main.cpp.obj.modmap	15e4e97f089e5015
+5363	5670	7548621854810707	dialogue.exe	c9c8c6b5a9900160

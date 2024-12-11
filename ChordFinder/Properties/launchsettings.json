@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "ChordFinder (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "ChordFinder (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

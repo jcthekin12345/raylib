@@ -1,0 +1,3 @@
+F:/ProgrammingEveryday/World/dialogue/cmake-build-debug/CMakeFiles/dialogue.dir
+F:/ProgrammingEveryday/World/dialogue/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/ProgrammingEveryday/World/dialogue/cmake-build-debug/CMakeFiles/rebuild_cache.dir

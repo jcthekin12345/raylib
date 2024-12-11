@@ -1,0 +1,238 @@
+{
+  "basics": {
+    "pronouns": {
+      "personal": {
+        "I": "ego",
+        "you": "te",
+        "he": "il",
+        "she": "ela",
+        "it": "et",
+        "we": "nos",
+        "they": "ils"
+      },
+      "possessive": {
+        "my": "egux",
+        "your": "tex",
+        "his": "ilax",
+        "her": "elax",
+        "its": "etax",
+        "our": "nosx",
+        "their": "ilsx"
+      }
+    },
+    "verbs": {
+      "core_verbs": {
+        "be": {
+          "present": "sola",
+          "past": "solan",
+          "future": "solen"
+        },
+        "do": {
+          "present": "para",
+          "past": "paran",
+          "future": "paren"
+        },
+        "have": {
+          "present": "hava",
+          "past": "havan",
+          "future": "haven"
+        },
+        "make": {
+          "present": "facta",
+          "past": "factan",
+          "future": "facten"
+        }
+      },
+      "action_verbs": {
+        "go": {
+          "present": "ira",
+          "past": "iran",
+          "future": "iren"
+        },
+        "come": {
+          "present": "vena",
+          "past": "venan",
+          "future": "venen"
+        },
+        "eat": {
+          "present": "eda",
+          "past": "edan",
+          "future": "eden"
+        },
+        "drink": {
+          "present": "biba",
+          "past": "biban",
+          "future": "biben"
+        },
+        "sleep": {
+          "present": "dorma",
+          "past": "dorman",
+          "future": "dormen"
+        },
+        "speak": {
+          "present": "parla",
+          "past": "parlan",
+          "future": "parlen"
+        },
+        "think": {
+          "present": "pensa",
+          "past": "pensan",
+          "future": "pensen"
+        },
+        "see": {
+          "present": "vida",
+          "past": "vidan",
+          "future": "viden"
+        },
+        "hear": {
+          "present": "auda",
+          "past": "audan",
+          "future": "auden"
+        }
+      }
+    }
+  },
+  "vocabulary": {
+    "nouns": {
+      "people": {
+        "person": "homos",
+        "friend": "amix",
+        "enemy": "hostix",
+        "brother": "fratus",
+        "sister": "soris",
+        "mother": "matis",
+        "father": "patis",
+        "teacher": "docis",
+        "student": "discos",
+        "warrior": "milus"
+      },
+      "places": {
+        "house": "domos",
+        "city": "civix",
+        "school": "scholos",
+        "market": "mercas",
+        "temple": "templos",
+        "garden": "hortos",
+        "room": "cambos",
+        "street": "vias",
+        "forest": "silvis",
+        "mountain": "montis"
+      },
+      "food": {
+        "food": "edos",
+        "bread": "meros",
+        "meat": "carnos",
+        "fruit": "frutos",
+        "water": "aquos",
+        "drink": "bibos",
+        "meal": "cenos"
+      },
+      "objects": {
+        "book": "libros",
+        "table": "mensos",
+        "chair": "sedos",
+        "door": "portos",
+        "window": "fenos",
+        "bed": "lectos",
+        "sword": "glados",
+        "shield": "scutos"
+      }
+    },
+    "adjectives": {
+      "size": {
+        "big": "magnos",
+        "small": "parvos",
+        "long": "longos",
+        "short": "brevos",
+        "tall": "altos"
+      },
+      "quality": {
+        "good": "bonos",
+        "bad": "malos",
+        "strong": "fortos",
+        "weak": "debos",
+        "fast": "velos",
+        "slow": "tardos",
+        "new": "novos",
+        "old": "antix"
+      },
+      "feelings": {
+        "happy": "felixos",
+        "sad": "tristos",
+        "angry": "iratos",
+        "tired": "fatos",
+        "hungry": "famos",
+        "thirsty": "sitos"
+      },
+      "colors": {
+        "red": "rubos",
+        "blue": "caeros",
+        "green": "viros",
+        "yellow": "flavos",
+        "black": "nigros",
+        "white": "albos"
+      }
+    },
+    "adverbs": {
+      "time": {
+        "now": "nuncos",
+        "today": "hodios",
+        "tomorrow": "crastos",
+        "yesterday": "heros",
+        "soon": "proxos",
+        "later": "postos",
+        "never": "nunos",
+        "always": "sempos"
+      },
+      "manner": {
+        "quickly": "velos",
+        "slowly": "tardos",
+        "well": "bonos",
+        "badly": "malos"
+      }
+    }
+  },
+  "prepositions": {
+    "in": "in",
+    "at": "ad",
+    "to": "ad",
+    "from": "de",
+    "with": "sol",
+    "without": "nosol",
+    "for": "por",
+    "by": "per",
+    "on": "sur",
+    "under": "sub"
+  },
+  "question_words": {
+    "what": "quid",
+    "where": "ubi",
+    "when": "quando",
+    "why": "cur",
+    "how": "quom",
+    "who": "quis"
+  },
+  "conjunctions": {
+    "and": "ux",
+    "or": "vel",
+    "but": "sed",
+    "because": "qua",
+    "if": "si",
+    "then": "tunc"
+  },
+  "common_phrases": {
+    "greetings": {
+      "hello": "salvos",
+      "goodbye": "valos",
+      "good morning": "bonos manos",
+      "good night": "bonos noctos",
+      "see you later": "viden postos"
+    },
+    "questions": {
+      "how are you": "quom te sola",
+      "what's your name": "quid tex nomos",
+      "where are you going": "ubi te ira",
+      "what are you doing": "quid te para"
+    }
+  }
+}
